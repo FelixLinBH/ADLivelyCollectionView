@@ -104,6 +104,9 @@ ADLivelyTransform ADLivelyTransformGrow = ^(CALayer * layer, float speed){
     } else {
         _preLivelyDelegate = delegate;
     }
+    if (delegate == nil) {
+        return;
+    }
     [super setDelegate:self];
 }
 
